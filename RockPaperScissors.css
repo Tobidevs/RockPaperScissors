@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+    --gray: rgb(35, 33, 39);
+    --border: 5px solid;
+    --blue: rgb(107, 127, 215)
+
+}
+body{
+    background-color: var(--gray);
+}
+.title{
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title h2{
+    color: var(--blue);
+    font-family: "Poppins";
+    font-size: 70px;
+}
