@@ -4,9 +4,11 @@
 }
 html{
     scroll-behavior: smooth;
-    --gray: rgb(35, 33, 39);
+    --gray: rgb(29, 28, 33);
     --border: 5px solid;
-    --blue: rgb(107, 127, 215)
+    --blue: rgb(107, 127, 215);
+    --black: rgb(20, 20, 23);
+    
 
 }
 body{
@@ -22,4 +24,26 @@ body{
     color: var(--blue);
     font-family: "Poppins";
     font-size: 70px;
+}
+.RPSbox{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+.RPSbox div{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 0px 40px 0px 40px;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 13px solid rgb(12, 12, 12)
+
+}
+.box{
+    font-family: "Poppins";
+    font-size: 50px;
+    color: rgb(154, 167, 211);
 }
