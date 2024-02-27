@@ -31,7 +31,8 @@ body{
     justify-content: center;
     align-items: center;
 }
-.RPSbox div{
+
+.button {
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -40,16 +41,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 13px solid rgb(12, 12, 12)
-
-}
-.box {
+    border: 13px solid rgb(12, 12, 12);
     font-family: "Poppins";
     font-size: 50px;
     color: rgb(154, 167, 211);
+    cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease, transform 0.3s ease;
 }
-.box:hover {
+.button:hover {
     background-color: var(--blue);
     border: 30px solid rgb(58, 84, 198);
     color: rgb(45, 88, 230);
