@@ -1,17 +1,17 @@
 let playerText = document.querySelector('#playerText');
 let computerText = document.querySelector('#computerText');
 let resultText = document.querySelector('#resultText');
-let choiceBtns = document.querySelectorAll(".button"); // Corrected typo
+let choiceBtns = document.querySelectorAll(".button");
 
 let player = "";
 let computer;
 let result;
 
-choiceBtns.forEach(button => button.addEventListener('click', () => { // Corrected typo
+choiceBtns.forEach(button => button.addEventListener('click', () => {
     player = button.textContent;
     computerTurn();
     playerText.textContent = `Player: ${player}`;
-    computerText.textContent = `Computer: ${computer}`; // Added colon
+    computerText.textContent = `Computer: ${computer}`;
     resultText.textContent = determineWinner();
 }));
 
@@ -32,7 +32,7 @@ function computerTurn() {
 
 function determineWinner() {
     if (player === computer) {
-        return 'Its a Draw!'; // Corrected apostrophe
+        return 'Its a Draw!';
     } else if (computer === 'Rock') {
         return (player === 'Paper') ? 'You Win!' : 'You Lose!';
     } else if (computer === 'Paper') {
