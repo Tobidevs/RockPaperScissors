@@ -10,7 +10,9 @@ let result;
 choiceBtn.forEach(button => button.addeventlistener(click, () => {
     player = button.textContent;
     computerTurn()
-
+    playerText.textContent = `You choose ${player}`
+    computerText.textContent = `COM choose ${computer}`
+    resultText.textContent = determineWinner()
 }))
 
 function computerTurn() {
@@ -25,5 +27,20 @@ function computerTurn() {
         case 3:
             computer = 'Scissors'
             break
+    }
+}
+
+function determineWinner() {
+    if(player == computer) {
+        return 'Its a Draw!'
+    }
+    else if(computer == 'Rock'){
+        return (player == 'Paper') ? 'You Win!':'You Lose!'
+    }
+    else if(computer == 'Paper'){
+        return (player == 'Scissors') ? 'You Win!':'You Lose!'
+    }
+    else if(computer == 'Scissors'){
+        return (player == 'Rock') ? 'You Win!':'You Lose!'
     }
 }
