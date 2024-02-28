@@ -2,6 +2,7 @@ let playerText = document.querySelector('#playerText');
 let computerText = document.querySelector('#computerText');
 let resultText = document.querySelector('#resultText');
 let choiceBtns = document.querySelectorAll(".button");
+let background = document.querySelector('#background')
 
 let player = "";
 let computer;
@@ -13,6 +14,8 @@ choiceBtns.forEach(button => button.addEventListener('click', () => {
     playerText.textContent = `Player: ${player}`;
     computerText.textContent = `Computer: ${computer}`;
     resultText.textContent = determineWinner();
+
+    changeBackground()
 }));
 
 function computerTurn() {
@@ -39,5 +42,16 @@ function determineWinner() {
         return (player === 'Scissors') ? 'You Win!' : 'You Lose!';
     } else if (computer === 'Scissors') {
         return (player === 'Rock') ? 'You Win!' : 'You Lose!';
+    }
+}
+
+function changeBackground() {
+    if (resultText.textContent === 'You Win!') {
+        background.style.backgroundColor = 'green'
+        
+    }
+    else if (resultText.textContent === 'You Lose!') {
+        background.style.backgroundColor = 'red'
+
     }
 }
