@@ -4,9 +4,23 @@ let resultText = document.querySelector('#resultText');
 let choiceBtns = document.querySelectorAll(".button");
 let background = document.querySelector('#background')
 
+
 let player = "";
 let computer;
 let result;
+
+choiceBtns.forEach(button =>  button.addEventListener('mouseenter', () => {
+        button.style.backgroundColor = 'rgb(107, 127, 215)';
+        button.style.border = '30px solid rgb(58, 84, 198)'
+        button.style.color = 'rgb(45, 88, 230)'
+        button.style.transform = 'scale(1.1)'
+}));
+choiceBtns.forEach(button => button.addEventListener('mouseleave', () => {
+    button.style.backgroundColor = '';
+        button.style.border = ''
+        button.style.color = ''
+        button.style.transform = ''
+}))
 
 choiceBtns.forEach(button => button.addEventListener('click', () => {
     player = button.textContent;
@@ -48,7 +62,7 @@ function determineWinner() {
 function changeBackground() {
     if (resultText.textContent === 'You Win!') {
         background.style.backgroundColor = 'green'
-        
+
     }
     else if (resultText.textContent === 'You Lose!') {
         background.style.backgroundColor = 'red'

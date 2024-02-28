@@ -48,10 +48,10 @@ body{
     color: rgb(154, 167, 211);
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease, transform 0.3s ease;
-}
+}/*
 .button:hover {
     background-color: var(--blue);
     border: 30px solid rgb(58, 84, 198);
     color: rgb(45, 88, 230);
     transform: scale(1.1); 
-}
+}*/
