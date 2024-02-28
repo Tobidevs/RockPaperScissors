@@ -55,3 +55,8 @@ body{
     color: rgb(45, 88, 230);
     transform: scale(1.1); 
 }*/
+.gameDiv{
+    height: 200px;
+    border: var(--border);
+    
+}

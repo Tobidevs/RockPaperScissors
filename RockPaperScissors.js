@@ -16,10 +16,10 @@ choiceBtns.forEach(button =>  button.addEventListener('mouseenter', () => {
         button.style.transform = 'scale(1.1)'
 }));
 choiceBtns.forEach(button => button.addEventListener('mouseleave', () => {
-    button.style.backgroundColor = '';
-        button.style.border = ''
-        button.style.color = ''
-        button.style.transform = ''
+        button.style.backgroundColor = '';
+        button.style.border = '';
+        button.style.color = '';
+        button.style.transform = '';
 }))
 
 choiceBtns.forEach(button => button.addEventListener('click', () => {
@@ -61,11 +61,20 @@ function determineWinner() {
 
 function changeBackground() {
     if (resultText.textContent === 'You Win!') {
-        background.style.backgroundColor = 'green'
-
+        background.style.backgroundColor = 'green';
+        
     }
     else if (resultText.textContent === 'You Lose!') {
         background.style.backgroundColor = 'red'
-
+    /*changeToRed()*/
     }
 }
+/*
+function changeToRed() { 
+    choiceBtns.forEach(button => button.addEventListener('mouseenter', () => {
+        button.style.backgroundColor = 'red';
+        button.style.border = '';
+        button.style.color = '';
+        button.style.transform = '';
+}))}
+*/
