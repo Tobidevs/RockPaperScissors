@@ -78,3 +78,10 @@ function changeToRed() {
         button.style.transform = '';
 }))}
 */
+function changeToGreen() { 
+    choiceBtns.forEach(button => button.addEventListener('mouseenter', () => {
+        button.style.backgroundColor = 'green';
+        button.style.border = '';
+        button.style.color = '';
+        button.style.transform = '';
+}))}
