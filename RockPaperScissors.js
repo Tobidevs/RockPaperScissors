@@ -71,7 +71,7 @@ function changeBackground() {
         title.style.color = 'rgb(20, 20, 23)'
         computerText.style.color = ''
         resultText.style.color = ''
-        changeToRed()
+        
     } 
     else if (resultText.textContent === 'Its a Draw!') {
         background.style.backgroundColor = 'rgb(29, 28, 33)'
