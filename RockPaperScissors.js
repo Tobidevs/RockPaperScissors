@@ -80,7 +80,7 @@ function changeBackground() {
         resultText.style.color = 'rgb(107, 127, 215)'
     }
 }
-
+/*
 function changeToRed() { 
     choiceBtns.forEach( button => {
         button.style.backgroundColor = 'red';
@@ -97,3 +97,4 @@ function changeToGreen() {
         button.style.color = '';
         button.style.transform = '';
 }))}
+*/
