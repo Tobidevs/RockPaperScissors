@@ -5,7 +5,6 @@ let choiceBtns = document.querySelectorAll(".button");
 let background = document.querySelector('#background');
 let title = document.querySelector('#title');
 
-
 let player = "";
 let computer;
 let result;
