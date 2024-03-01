@@ -25,6 +25,7 @@ body{
     color: var(--blue);
     font-family: "Poppins";
     font-size: 70px;
+    transition: color 0.3s ease;
 }
 .RPSbox{
     height: 360px;
@@ -48,15 +49,23 @@ body{
     color: rgb(154, 167, 211);
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease, transform 0.3s ease;
-}/*
-.button:hover {
-    background-color: var(--blue);
-    border: 30px solid rgb(58, 84, 198);
-    color: rgb(45, 88, 230);
-    transform: scale(1.1); 
-}*/
+}
 .gameDiv{
     height: 200px;
-    border: var(--border);
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 } 
+.comOp{
+    height: 50px;
+    font-size: 30px;
+    font-family: "Poppins";
+    transition: color 0.3s ease;
+}
+.resultOp{
+    height: 30px;
+    font-size: 50px;
+    font-family: "Poppins";
+    transition: color 0.3s ease;
+}
