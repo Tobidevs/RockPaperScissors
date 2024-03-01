@@ -56,6 +56,7 @@ function determineWinner() {
     } else if (computer === 'Scissors') {
         return (player === 'Rock') ? 'You Win!' : 'You Lose!';
     }
+    
 }
 
 function changeBackground() {
