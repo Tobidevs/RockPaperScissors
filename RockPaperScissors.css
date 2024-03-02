@@ -14,6 +14,7 @@ html{
 body{
     background-color: var(--gray);
     transition: background-color 0.3s ease;
+    
 }
 .title{
     height: 250px;
@@ -27,11 +28,21 @@ body{
     font-size: 70px;
     transition: color 0.3s ease;
 }
-.RPSbox{
-    height: 360px;
+.centerbox{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.RPSbox{
+    height: 460px;
+    width: 1270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: var(--border);
+    border-radius: 200px;
+    background-color: rgb(27, 26, 30);*/
+
 }
 
 .button {

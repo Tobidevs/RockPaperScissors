@@ -25,7 +25,7 @@ choiceBtns.forEach(button => button.addEventListener('mouseleave', function reve
 choiceBtns.forEach(button => button.addEventListener('click', () => {
     player = button.textContent;
     computerTurn();
-    computerText.textContent = `Comupter choose ${computer}`;
+    computerText.textContent = `Comupter Choose ${computer}`;
     resultText.textContent = determineWinner();
 
     changeBackground()
@@ -56,7 +56,7 @@ function determineWinner() {
     } else if (computer === 'Scissors') {
         return (player === 'Rock') ? 'You Win!' : 'You Lose!';
     }
-    
+
 }
 
 function changeBackground() {
