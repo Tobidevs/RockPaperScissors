@@ -25,7 +25,7 @@ choiceBtns.forEach(button => button.addEventListener('mouseleave', function reve
 choiceBtns.forEach(button => button.addEventListener('click', () => {
     player = button.textContent;
     computerTurn();
-    computerText.textContent = `Comupter Choose ${computer}`;
+    computerText.textContent = `Computer Choose ${computer}`;
     resultText.textContent = determineWinner();
 
     changeBackground()
@@ -80,7 +80,7 @@ function changeBackground() {
         resultText.style.color = 'rgb(107, 127, 215)'
     }
 }
-/*
+
 function changeToRed() { 
     choiceBtns.forEach( button => {
         button.style.backgroundColor = 'red';
@@ -97,4 +97,3 @@ function changeToGreen() {
         button.style.color = '';
         button.style.transform = '';
 }))}
-*/
